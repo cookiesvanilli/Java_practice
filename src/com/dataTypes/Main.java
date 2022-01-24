@@ -1,4 +1,4 @@
-package com.company;
+package com.dataTypes;
 
 public class Main {
 
