@@ -8,8 +8,9 @@ public class Transport {
 
     private float speed;
     private int weight;
-    private String color;
+    protected String color;
     private byte[] coordinate;
+
 
     public Transport(float speed, int weight, String color, byte[] coordinate) {
         //example Join to DB
@@ -25,14 +26,14 @@ public class Transport {
     }
 
 
-    public void setValues(float speed, int weight, String color, byte[] coordinate) {
+    protected void setValues(float speed, int weight, String color, byte[] coordinate) {
         this.speed = speed;
         this.weight = weight;
         this.color = color;
         this.coordinate = coordinate;
     }
 
-    public String getValues() {
+    protected String getValues() {
         String info = "Object speed: " + this.speed + ". Weight: " + this.weight + ". Color: " + this.color;
         String infoCoord = ". \nCoordinates:\n";
         for (int i = 0; i < coordinate.length; i++) {

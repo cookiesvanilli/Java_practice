@@ -2,7 +2,7 @@ package oop.oop;
 
 public class OOP {
     public static void main(String[] args) {
-        Transport bmw = new Transport(250.5f, 2500, "White", new byte[]{0, 0, 0});
+        //Transport bmw = new Transport(250.5f, 2500, "White", new byte[]{0, 0, 0});
         //bmw.setValues(250.5f, 2500, "White", new byte[]{0, 0, 0});
 //        String res1 = bmw.getValues();
 //        System.out.println(res1);
@@ -11,7 +11,7 @@ public class OOP {
 //        bmw.color = "White";
 //        bmw.coordinate = new byte[]{0, 0, 0};
 
-        Transport truck = new Transport(5600, new byte[]{100, 0, 100});
+        //Transport truck = new Transport(5600, new byte[]{100, 0, 100});
 //        Transport truck = new Transport();
 //        truck.speed = 140.5f;
 //        truck.weight = 5600;
@@ -20,5 +20,12 @@ public class OOP {
 //
 //        String res2 = truck.getValues();
 //        System.out.println(res2);
+
+        Car bmw = new Car(250.5f, 2500, "White", new byte[]{0, 0, 0});
+        Truck truck = new Truck(5600, new byte[]{100, 0, 100}, false);
+
+        truck.setLoaded(true);
+        truck.getLoaded();
+
     }
 }
