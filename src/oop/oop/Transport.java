@@ -11,6 +11,10 @@ public abstract class Transport {
     protected String color;
     private byte[] coordinate;
 
+    public Transport() {
+
+    }
+
 
     public Transport(float speed, int weight, String color, byte[] coordinate) {
         //example Join to DB
